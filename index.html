@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Elías Uriel García</title>
+</head>
+
+<body>
+    <main>
+        <h2 class="tituloForm">Cargue sus productos</h2>
+        <div class="formulario-caja">
+            <form class="form" id="form">
+                <label class="id" for="inputId">ID</label>
+                <input class="inputId" type="number" name="id" id="inputId"><br>
+                <label class="nombre" for="inputNombre">Nombre</label>
+                <input class="inputNombre" type="text" name="nombre" id="inputNombre" /><br>
+                <label class="proveedor" for="inputProveedor">Proveedor</label>
+                <input class="inputProveedor" type="text" name="proveedor" id="inputProveedor"><br>
+                <label class="precioCompra" for="inputPrecioCompra">Precio compra</label>
+                <input class="inputPrecioCompra" type="number" name="precioCompra" id="inputPrecioCompra"><br>
+                <label class="precioVenta" for="inputPrecioVenta">Precio venta</label>
+                <input class="inputPrecioVenta" type="number" name="precioVenta" id="inputPrecioVenta"><br>
+                <label class="cantidad" for="inputCantidad">Cantidad</label>
+                <input class="inputCantidad" type="number" name="cantidad" id="inputCantidad"><br>
+                <div class="botones-enviar-reset">
+                    <input class="enviar" type="submit" value="Cargar producto." /><br>
+                    <input class="reset" type="reset" value="Resetear formulario." /><br>
+                </div>
+            </form>
+        </div>
+        <div class="contenedor-boton-limpiarLS">
+            <button class="botonLimpiarLS" id="limpiarLS">Borrar inventario</button>
+        </div>
+        <div id="contenedor-productos"></div>
+        <footer>
+            <p class="footer">
+                <b>2023 Powered by <a href="https://www.linkedin.com/in/eliasurielgarcia">Elias Uriel Garcia</a></b>
+            </p>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

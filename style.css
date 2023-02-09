@@ -1,0 +1,178 @@
+body {
+  background-color: rgb(108, 107, 126);
+  background-image: url('img/fondo.png');
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-position: center top 100px;
+}
+
+.card {
+  background-color: rgb(68, 64, 121);
+  align-items: center;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+@keyframes card {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+b {
+  color: #fafafa;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  animation: tittle 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  color: #fafafa;
+}
+
+@keyframes tittle {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#contenedor-productos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation: card 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.delete-button {
+  width: 250px;
+  border-radius: 300px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.delete-button:hover {
+  background-color: rgb(68, 64, 121);
+  color: #fff;
+  font-weight: bold;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 250px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+}
+
+
+.formulario-caja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+}
+
+
+.contenedor-boton-limpiarLS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.botonLimpiarLS {
+  width: 500px;
+  height: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.5;
+  font-weight: bold;
+}
+
+.botonLimpiarLS:hover {
+  background-color: rgb(108, 107, 126);
+  color: #fff;
+}
+
+.form label {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fafafa;
+}
+
+.enviar {
+  width: 400px;
+  height: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.5;
+  font-weight: bold;
+}
+
+.enviar:hover {
+  background-color: rgb(108, 107, 126);
+  color: #fff;
+  font-weight: bold;
+}
+
+.reset {
+  width: 400px;
+  height: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.5;
+  font-weight: bold;
+}
+
+.reset:hover {
+  background-color: rgb(108, 107, 126);
+  color: #fff;
+  font-weight: bold;
+}
+
+.botones-enviar-reset {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5;
+  padding-left: 5px;
+}
+
+.footer{
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
